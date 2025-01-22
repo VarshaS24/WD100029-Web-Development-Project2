@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Quiz Completed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="page">
+        <h2>Congratulations! You have successfully completed the quiz</h2>
+        <p id="final-score"></p> 
+        <button class="try" onclick="retry()">Retry</button>
+    </section>
+
+    <script>
+
+        const score = localStorage.getItem("quizScore") || 0;
+        const totalQuestions = localStorage.getItem("totalQuestions") || 0;
+
+        if (score !== null && totalQuestions !== null) {
+            document.getElementById("final-score").textContent = `Your Score: ${score}/${totalQuestions}`;
+
+        } 
+
+function retry(){
+            window.location.href="form.html";
+        }
+    </script>
+</body>
+</html>

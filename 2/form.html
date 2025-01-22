@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <section class="quiz1">
+        <h1>TECHNICAL QUIZ</h1>
+        <div class="box">
+        <div class="ques">
+            <h4 class="score">Score 0/5</h4>
+            <h2  id=ques></h2>
+            
+        </div>
+        
+        <div class="ans">
+            <div class="box1" onclick="selectAnswer()">A:
+            <p class="box2"></p>
+        </div>
+        <div class="box1" onclick="selectAnswer()">B:
+            <p class="box2"></p>
+        </div>
+        <div class="box1"  onclick="selectAnswer()">C:
+            <p class="box2"></p>
+        </div>
+        <div class="box1"  onclick="selectAnswer()">D:
+            <p class="box2"></p>
+        </div>
+        <div id="next" class="next" onclick="nextQuestion()" style="display:none;">Next</div>
+    </div>
+    </div>
+   
+        
+    </section>
+    <script src=script.js></script>
+</body>
+</html>
